@@ -1,0 +1,35 @@
+{
+  "config": {
+    "url": "https://sheets.googleapis.com/v4/spreadsheets/1yFb4oTvhW1t8FRsNIJardMgjrsO8rSo_LPHBpiK3QUE/values/Person%20DB%21A1%3AB2",
+    "method": "GET",
+    "headers": {
+      "Accept-Encoding": "gzip",
+      "User-Agent": "google-api-nodejs-client/0.7.2 (gzip)",
+      "Authorization": "Bearer ya29.c.KqEBEQi9-pq0gqfGAuJFFkGRGkYpm5pvSUqmNtbvtAB5UREPWAEBCcOhQDo8SpVgH7NZcsJn_mnhcbVSiDUdcha9kOxOvj1kGtBF5ZNtndlHdY-l6yFnJeREkntQ7ZdtejolvR7wkUOVXJAcJQD2fU7E5fX8_AibXXTNf9OKy-sTlgVTCyL6uHpqSq9TFLOfBT2BWAASSPPdhxklbQ-vtxZYh8Y............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................",
+      "Accept": "application/json"
+    },
+    "params": {},
+    "responseType": "json"
+  },
+  "data": {
+    "range": "'Person DB'!A1:B2",
+    "majorDimension": "ROWS",
+    "values": [["Name", "RFID"], ["John Doe"]]
+  },
+  "headers": {
+    "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+    "cache-control": "private",
+    "connection": "close",
+    "content-encoding": "gzip",
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Mon, 27 Sep 2021 18:49:50 GMT",
+    "server": "ESF",
+    "transfer-encoding": "chunked",
+    "vary": "Origin, X-Origin, Referer",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN",
+    "x-xss-protection": "0"
+  },
+  "status": 200,
+  "statusText": "OK"
+}

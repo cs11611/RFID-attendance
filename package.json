@@ -1,0 +1,19 @@
+{
+  "name": "attendence_system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@serialport/list": "^9.2.3",
+    "@serialport/parser-readline": "^9.0.7",
+    "express": "^4.17.1",
+    "googleapis": "^39.2.0",
+    "serialport": "^9.2.3",
+    "socket.io": "^4.2.0"
+  }
+}

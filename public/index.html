@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attendence System</title>
+    <style>
+      html body {
+        margin: 0;
+      }
+      .center {
+        font-size: 5em;
+        /* height: 100vh; */
+        /* width: 100vw; */
+        /* display: flex; */
+        text-align: center;
+        /* align-items: center; */
+      }
+    </style>
+    <script
+      src="https://cdn.socket.io/4.2.0/socket.io.min.js"
+      integrity="sha384-PiBR5S00EtOj2Lto9Uu81cmoyZqR57XcOna1oAuVuIEjzj0wpqDVfD0JA9eXlRsj"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="center">
+      Tag Scanned:
+      <div id="id">N/A</div>
+      <br />
+      Name:
+      <div id="name">N/A</div>
+    </div>
+  </body>
+  <script>
+    var audio = new Audio("beep.wav");
+    const socket = io();
+    let id = document.getElementById("id");
+    let name = document.getElementById("name");
+    socket.on("scanCode", (data) => {
+      // alert(data);
+      name.innerHTML = data.name;
+      id.innerHTML = data.id;
+      audio.play();
+    });
+  </script>
+</html>
